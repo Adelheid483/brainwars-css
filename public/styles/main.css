@@ -1,0 +1,1413 @@
+/* Eric Meyer's CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  /*  padding: 0 !important; */
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 0px !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    padding: 0px !important;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../../assets/fonts/Acrom-Regular.woff2") format("woff2"), url("../../assets/fonts/Acrom-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../../assets/fonts/Acrom-Medium.woff2") format("woff2"), url("../../assets/fonts/Acrom-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../../assets/fonts/Acrom-Bold.woff2") format("woff2"), url("../../assets/fonts/Acrom-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../../assets/fonts/Acrom-Thin.woff2") format("woff2"), url("../../assets/fonts/Acrom-Thin.woff") format("woff");
+  font-weight: 250;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main-container {
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menu {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 500px) {
+  .menu {
+    position: static;
+  }
+}
+
+.main {
+  padding-bottom: 103px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (max-width: 500px) {
+  .main {
+    padding-bottom: 155px;
+  }
+}
+
+.footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 160%;
+  color: #353535;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #5A5A5A;
+}
+
+.button {
+  width: 156px;
+  height: 31px;
+  background-color: #A1285F;
+  border-radius: 5px;
+  border: 2px solid #A1285F;
+  color: #f9f9f9;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px rgba(161, 40, 95, 0.69);
+          box-shadow: 0px 0px 10px rgba(161, 40, 95, 0.69);
+  text-decoration: none;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0px 0px 15px #BF2F71;
+          box-shadow: 0px 0px 15px #BF2F71;
+  background: #BF2F71;
+  border-color: #BF2F71;
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 16px;
+    width: 135px;
+  }
+}
+
+.button_light {
+  background-color: transparent;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.main {
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .main {
+    position: static;
+  }
+}
+
+.footer {
+  z-index: 2;
+}
+
+.main-container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 620px;
+  height: 493px;
+  background-image: url("../assets/images/vector-left-top.svg");
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .main-container:before {
+    display: none;
+  }
+}
+
+.main-container:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 556px;
+  height: 329px;
+  background-image: url("../assets/images/vector-left-bottom.svg");
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .main-container:after {
+    display: none;
+  }
+}
+
+.header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 372px;
+  height: 774px;
+  background-image: url("../assets/images/vector-right-top.svg");
+  top: 0;
+  right: -40px;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .header:after {
+    display: none;
+  }
+}
+
+.header {
+  background-color: #472B83;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  margin-right: 46px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 500px) {
+  .menu__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.menu__link {
+  color: #f9f9f9;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .menu__link {
+    font-size: 20px;
+  }
+
+  .menu__link svg {
+    display: none;
+  }
+}
+
+.menu__mobile-text {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .menu__mobile-text {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu__list {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 83px;
+    background-color: #472B83;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    z-index: 3000;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  .burger {
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .burger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    height: 3px;
+    background-color: #f9f9f9;
+  }
+
+  .burger span:nth-child(1) {
+    top: 0;
+  }
+
+  .burger span:nth-child(2),
+  .burger span:nth-child(3) {
+    top: 8px;
+  }
+
+  .burger span:nth-child(4) {
+    top: 16px;
+  }
+
+  .burger.active span:nth-child(1) {
+    top: 8px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .burger.active span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .burger.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .burger.active span:nth-child(4) {
+    top: 8px;
+    width: 0%;
+    left: 50%;
+  }
+}
+
+.footer {
+  background-color: #2A1851;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .rs-logo {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.authors__link {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #f9f9f9;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.authors__link svg path {
+  fill: #f9f9f9;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.authors__link:hover {
+  color: #FFBD59;
+}
+
+.authors__link:hover svg path {
+  fill: #FFBD59;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.authors__item {
+  margin-bottom: 7px;
+}
+
+.authors__item:last-child {
+  margin-bottom: 0;
+}
+
+.authors__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authots__name {
+  margin-right: 5px;
+}
+
+.game-title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+@media (max-width: 500px) {
+  .game-title {
+    font-size: 24px;
+  }
+}
+
+.game-status {
+  margin-bottom: 20px;
+}
+
+.game-status__item {
+  margin-bottom: 12px;
+}
+
+.game-status__item:last-child {
+  margin-bottom: 0;
+}
+
+.game-status__title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.game-status__state {
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.game-box {
+  max-width: 800px;
+  min-height: 350px;
+  margin: auto;
+  background-color: #f9f9f9;
+  margin-bottom: 40px;
+}
+
+.game-finish {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 74px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(148, 115, 218, 0.45);
+  z-index: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+  /*HIDE!!!!*/
+  display: none;
+}
+
+.modal__box {
+  background: #472B83;
+  -webkit-box-shadow: 0px 4px 5px rgba(133, 131, 131, 0.2);
+          box-shadow: 0px 4px 5px rgba(133, 131, 131, 0.2);
+  border-radius: 10px;
+  max-width: 700px;
+  position: absolute;
+  z-index: 1000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition-duration: 700ms;
+       -o-transition-duration: 700ms;
+          transition-duration: 700ms;
+  padding: 15px 15px 70px 40px;
+}
+
+.modal__box:after {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 84px;
+  background-image: url("../assets/images/logo-sign.png");
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.modal-title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  color: #F9F9F9;
+  margin-bottom: 25px;
+}
+
+.button-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+/*-------------Game--------------*/
+
+.game-result {
+  margin-bottom: 40px;
+}
+
+.game-result__item {
+  margin-bottom: 15px;
+}
+
+.game-result__item:last-child {
+  margin-bottom: 0;
+}
+
+.game-result__title {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #F9F9F9;
+}
+
+.game-result__score,
+.game-result__time,
+.game-result__achives {
+  display: inline-block;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #F9F9F9;
+}
+
+.game-restart {
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.game-quit {
+  display: inline-block;
+}
+
+/*--------------Home-----------*/
+
+.about-game__desc {
+  margin-bottom: 20px;
+  margin-right: 35px;
+}
+
+.about-game__p {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9F9F9;
+  margin-bottom: 10px;
+}
+
+.about-game_subtitle {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  color: #F9F9F9;
+  margin-bottom: 10px;
+}
+
+.form_sign-up {
+  margin-top: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.form__title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  margin-bottom: 4px;
+}
+
+.form__link {
+  display: block;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #F9F9F9;
+  margin-bottom: 20px;
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.form__field:last-of-type {
+  margin-bottom: 35px;
+}
+
+.form__input {
+  background: #F9F9F9;
+  border: 1px solid #6175C0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #888888;
+  padding: 6px 10px;
+  width: 300px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .form__input {
+    width: 250px;
+  }
+}
+
+.form__error {
+  position: absolute;
+  top: 33px;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #EB6AA4;
+}
+
+.games {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.games__item {
+  background: #FDFDFD;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(133, 131, 131, 0.2);
+          box-shadow: 0px 4px 4px rgba(133, 131, 131, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 50px 25px 20px;
+}
+
+@media (max-width: 500px) {
+  .games__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 20px 25px 20px;
+  }
+}
+
+.games__item_recommended {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 960px) {
+  .games__item_recommended {
+    display: none;
+  }
+}
+
+.games__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+@media (max-width: 960px) {
+  .games__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.games__img-frame {
+  width: 162px;
+  height: 167px;
+  margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+  .games__img-frame {
+    margin-bottom: 20px;
+  }
+}
+
+.games__item_recommended .games__img-frame {
+  width: 245px;
+  height: 225px;
+  margin-right: 30px;
+}
+
+.games__img {
+  width: 162px;
+  height: 167px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.games__item_recommended .games__img {
+  width: 245px;
+  height: 225px;
+}
+
+@media (max-width: 500px) {
+  .games__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.games__title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 135%;
+  text-transform: capitalize;
+  color: #472B83;
+  margin-bottom: 15px;
+}
+
+.games__item_recommended .games__title {
+  font-size: 36px;
+}
+
+.games__p {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 135%;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.games__item_recommended .games__p {
+  font-size: 18px;
+}
+
+.games__desc {
+  margin-bottom: 25px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .games__desc {
+    text-align: center;
+  }
+}
+
+.games__item_recommended .games__desc {
+  max-height: 100px;
+}
+
+.transparent-wrapper {
+  background: rgba(71, 43, 131, 0.24);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 10px;
+  margin: 40px auto 90px;
+  padding: 45px 43px 73px;
+}
+
+@media (max-width: 500px) {
+  .transparent-wrapper {
+    padding: 20px 15px 73px;
+  }
+}
+
+.profile__title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 670px) {
+  .profile__title {
+    font-size: 22px;
+  }
+}
+
+.profile__box {
+  margin-bottom: 30px;
+}
+
+.profile__row {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  margin-bottom: 20px;
+}
+
+.profile__row span {
+  font-weight: 250;
+}
+
+.profile__row .sound-status {
+  font-weight: 250;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile__row .sound-status.active {
+  font-weight: bold;
+}
+
+.profile__row .theme-status {
+  font-weight: 250;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile__row .theme-status.active {
+  font-weight: bold;
+}
+
+.profile__subtitle {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  margin-bottom: 20px;
+}
+
+.statistic__title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 670px) {
+  .statistic__title {
+    font-size: 22px;
+  }
+}
+
+.statistic__table {
+  margin-bottom: 60px;
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  text-align: left;
+}
+
+.statistic__table th {
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+
+@media (max-width: 670px) {
+  .statistic__table th {
+    padding-right: 15px;
+  }
+}
+
+.statistic__table tr td {
+  padding-bottom: 15px;
+  padding-right: 90px;
+}
+
+@media (max-width: 670px) {
+  .statistic__table tr td {
+    padding-right: 15px;
+  }
+}
+
+.statistic__table th {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 670px) {
+  .statistic__table th {
+    font-size: 14px;
+  }
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 25px;
+  max-width: 750px;
+}
+
+@media (max-width: 900px) {
+  .achievements {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .achievements {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 460px) {
+  .achievements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+.achievements__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0.1;
+}
+
+.achievements__item.active {
+  opacity: 1;
+}
+
+.achievements__img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+  margin-bottom: 6px;
+}
+
+.achievements__title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+}
+
+.main-container_dark {
+  background: -o-linear-gradient(270.21deg, #9473DA -1.13%, #1B1033 99.82%);
+  background: linear-gradient(179.79deg, #9473DA -1.13%, #1B1033 99.82%);
+}
+
+.main-container_dark .game-title {
+  color: #F9F9F9;
+}
+
+.main-container_dark .game-status__title {
+  color: #F9F9F9;
+}
+
+.main-container_dark .game-status__state {
+  color: #f9f9f9;
+}
+
+.main-container_welcome {
+  background-color: #472B83;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container_welcome:before {
+  display: none;
+}
+
+.main-container_welcome:after {
+  display: none;
+}
+
+.main-container_welcome .header:after {
+  display: none;
+}
+
+.main-container_welcome .header {
+  background-color: transparent;
+}
+
+.main-container_welcome .menu {
+  display: none;
+}
+
+.main-container_welcome .footer {
+  background-color: transparent;
+}
+
+.main-container_welcome .main_welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main-container_welcome .welcome-info {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  z-index: 10;
+}
+
+.main-container_welcome .welcome-title {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  color: #F9F9F9;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .main-container_welcome .welcome-title {
+    font-size: 36px;
+  }
+}
+
+.main-container_welcome .welcome-subtitle {
+  font-family: Acrom, sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #F9F9F9;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+@media (max-width: 600px) {
+  .main-container_welcome .welcome-subtitle {
+    font-size: 20px;
+  }
+}
+
+.main-container_welcome .welcome-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container_welcome .button-sign-in {
+  margin-right: 30px;
+}
+
+@media (max-width: 600px) {
+  .main-container_welcome .button-sign-in {
+    margin-right: 15px;
+  }
+}
+
+.main-container_welcome .circles-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100vh;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
