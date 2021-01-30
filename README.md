@@ -1,13 +1,13 @@
 # BrainWars
 
 ## Ссылки на страницы
-https://marinarium.github.io/brainwars-css/public/welcome.html
-https://marinarium.github.io/brainwars-css/public/sign-in.html
-https://marinarium.github.io/brainwars-css/public/sign-up.html
-https://marinarium.github.io/brainwars-css/public/game-list.html
-https://marinarium.github.io/brainwars-css/public/game.html
-https://marinarium.github.io/brainwars-css/public/statistic.html
-https://marinarium.github.io/brainwars-css/public/profile.html
+- https://marinarium.github.io/brainwars-css/public/welcome.html
+- https://marinarium.github.io/brainwars-css/public/sign-in.html
+- https://marinarium.github.io/brainwars-css/public/sign-up.html
+- https://marinarium.github.io/brainwars-css/public/game-list.html
+- https://marinarium.github.io/brainwars-css/public/game.html
+- https://marinarium.github.io/brainwars-css/public/statistic.html
+- https://marinarium.github.io/brainwars-css/public/profile.html
 
 ## Структура проекта
 ### Base
