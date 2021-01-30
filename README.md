@@ -1,4 +1,14 @@
 # BrainWars
+
+## Ссылки на страницы
+https://marinarium.github.io/brainwars-css/public/welcome.html
+https://marinarium.github.io/brainwars-css/public/sign-in.html
+https://marinarium.github.io/brainwars-css/public/sign-up.html
+https://marinarium.github.io/brainwars-css/public/game-list.html
+https://marinarium.github.io/brainwars-css/public/game.html
+https://marinarium.github.io/brainwars-css/public/statistic.html
+https://marinarium.github.io/brainwars-css/public/profile.html
+
 ## Структура проекта
 ### Base
 Содержит глобальные правила "box-sizing", сброс CSS или стили для печати - всё, что должно быть задано в самом начале CSS, но еще не зависит от конкретного проекта.
